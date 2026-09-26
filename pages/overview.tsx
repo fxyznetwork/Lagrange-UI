@@ -35,7 +35,7 @@ const Overview: NextPage<Props> = (props) => {
   const [usdTryb, setUsdTryb] = React.useState<string>()
 
   async function getCurrenciesBoard() {
-    const apiKey = '74676f0feb3ce4f81eda70c39b1eeaf9'
+    const apiKey = ''
     const endpoint =
       'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=usd-coin%2Cbrz%2Cbilira%2Cageur&order=market_cap_desc&per_page=100&page=1&sparkline=false&price_change_percentage=24h'
     const url = `${endpoint}&ping?x_cg_pro_api_key=${apiKey}`
